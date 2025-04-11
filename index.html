@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fivel 2025 - Home</title>
+  <!-- Fonte Montserrat e Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" type="imagex/png" href="./img/Logo Fivel 2.png">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500&display=swap" 
+    rel="stylesheet"
+  >
+  <!-- Tailwind CSS -->
+  <link href="/src/css/output.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 6px;
+    border-radius: 8px;
+    min-width: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .countdown-number {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .countdown-label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .fill-red-my {
+    fill: red;
+  }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  
+  <div id="header"></div>
+  <div class="w-full h-20 bg-black flex flex-col justify-center items-center">
+    <p class="text-red-500 font-bold text-2xl">SITE EM DESENVOLVIMENTO</span>
+    <p class="text-white">Os elementos usados são provisórios!</span>
+  </div>
+  
+  <!-- HERO SECTION (BANNER PRINCIPAL) -->
+<section class="relative w-full bg-gradient-to-r from-[#009CA7] to-[#0C2E4E] text-white py-16 md:py-24 bg-circuit">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center text-center">
+
+    <span class="border border-white/60 px-10 h-8 rounded-full flex items-center justify-center text-sm text-white/80">
+      22/10 a 24/10 | SRS - MG
+    </span>
+
+    <!-- Contagem Regressiva Moderna -->
+    <h3 class="mb-4 text-md mt-5">Falta apenas</h3>
+    <div class="flex space-x-4 md:space-x-6 mb-6">
+      <div class="countdown-box">
+        <span id="days" class="countdown-number [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.3)]">00</span>
+        <span class="countdown-label">Dias</span>
+      </div>
+      <div class="countdown-box">
+        <span id="hours" class="countdown-number [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.3)]">00</span>
+        <span class="countdown-label">Horas</span>
+      </div>
+      <div class="countdown-box">
+        <span id="minutes" class="countdown-number [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.3)]">00</span>
+        <span class="countdown-label">Minutos</span>
+      </div>
+      <div class="countdown-box">
+        <span id="seconds" class="countdown-number [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.3)]">00</span>
+        <span class="countdown-label">Segundos</span>
+      </div>
+    </div>
+
+    <!-- Chamada Principal -->
+    <h1 class="text-3xl md:text-5xl font-bold mb-4 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.3)] ">
+      Fivel 2025: A Feira Industrial e Tecnológica que Impulsiona Negócios
+    </h1>
+    <p class="text-sm md:text-lg max-w-2xl mb-8">
+      Descubra a maior feira industrial do Vale da Eletrônica, que acontece de 22 a 24 de outubro em Santa Rita do Sapucaí. Um evento imperdível onde inovação, networking e oportunidades de crescimento se encontram em um só lugar.
+    </p>
+
+    <!-- Botão CTA -->
+    <a href="#" class="bg-[#00CC66] hover:bg-[#009CA7] text-white bloqueado font-bold flex items-center py-3 px-8 rounded text-base md:text-lg transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-auto" fill="white" stroke="currentColor" viewBox="0 0 512 512">
+        <path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
+      </svg>
+      <span class="ml-2 -mt-0.5 md:-mt-1">Saiba mais em breve</span>
+    </a>
+  </div>
+</section>
+<!-- FIM HERO SECTION -->
+
+<div class="w-full h-0.5 bg-black opacity-10"></div>
+
+<!-- SLIDER INFINITO DE PATROCINADORES -->
+<section class="py-8 md:py-12 relative bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-[#0C2E4E]">
+      Patrocinadores
+    </h2>
+
+    <!-- Contêiner do Slider -->
+    <div class="relative w-full overflow-hidden reveal">
+      <!-- Sombras Laterais -->
+      <div class="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-white via-white to-transparent z-10"></div>
+      <div class="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-white via-white to-transparent z-10"></div>
+
+      <!-- Slider em Movimento -->
+      <div class="flex w-[calc(200px*14)] animate-marquee">
+        <!-- Logos (DUPLICADOS PARA LOOP SUAVE) -->
+        <div class="flex space-x-2 md:space-x-8">
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/topo_Sebrae.png" alt="AISRS" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/fapemig.png" alt="Parque Tecnológico" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/governo-de-minas-gerais-2019-logo-png_seeklogo-356274.png" alt="Sindvel" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo_fiemg-1.webp" alt="Vale da Eletrônica" class="h-16 object-contain" />
+          </div>
+
+          <!-- Segunda volta para efeito contínuo -->
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/topo_Sebrae.png" alt="AISRS" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/fapemig.png" alt="Parque Tecnológico" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/governo-de-minas-gerais-2019-logo-png_seeklogo-356274.png" alt="Sindvel" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo_fiemg-1.webp" alt="Vale da Eletrônica" class="h-16 object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link para ver todos os patrocinadores -->
+    <div class="text-center mt-6 flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-2 md:space-y-0">
+      <a href="#" class="bloqueado flex items-center justify-center text-white font-bold w-64 py-2 rounded text-sm md:text-base hover:underline bg-[#009CA7] border border-[#009CA7] reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="white" stroke="currentColor" viewBox="0 0 384 512">
+          <path d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z"/>
+        </svg>
+        Seja um patrocinador
+      </a>
+    
+      <a href="#" class="bloqueado flex items-center justify-center text-[#009CA7] hover:text-[#0C2E4E] font-bold w-64 py-2 rounded text-sm md:text-base hover:underline border reveal">
+        Veja todos os patrocinadores
+      </a>
+    </div>    
+  </div>
+</section>
+
+<div class="w-full h-0.5 bg-black opacity-10"></div>
+
+<!-- SLIDER INFINITO DE REALIZADORES -->
+<section class="py-8 md:py-6 relative bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-[#0C2E4E]">
+      Realização
+    </h2>
+
+    <!-- Contêiner do Slider -->
+    <div class="relative w-full overflow-hidden reveal">
+      <!-- Sombras Laterais -->
+      <div class="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-white via-white to-transparent z-10"></div>
+      <div class="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-white via-white to-transparent z-10"></div>
+
+      <!-- Slider em Movimento -->
+      <div class="flex w-[calc(200px*14)] animate-marquee">
+        <!-- Logos (DUPLICADOS PARA LOOP SUAVE) -->
+        <div class="flex space-x-2 md:space-x-8">
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/Logo AISRS - Siglas.png" alt="AISRS" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/LOGO_SRSAPUCAI_positiva.png" alt="Parque Tecnológico" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/SINDVEL COM LEGENDA.png" alt="Sindvel" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/VALE da eletronica.png" alt="Vale da Eletrônica" class="h-16 object-contain" />
+          </div>
+
+          <!-- Segunda volta para efeito contínuo -->
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/Logo AISRS - Siglas.png" alt="AISRS" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/LOGO_SRSAPUCAI_positiva.png" alt="Parque Tecnológico" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/SINDVEL COM LEGENDA.png" alt="Sindvel" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/VALE da eletronica.png" alt="Vale da Eletrônica" class="h-16 object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+</section>
+
+<div class="w-full h-0.5 bg-black opacity-10"></div>
+
+ <!-- SLIDER INFINITO DE APOIADORES -->
+<section class="py-8 md:py-6 relative bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-[#0C2E4E]">
+      Apoiadores
+    </h2>
+
+    <!-- Contêiner do Slider -->
+    <div class="relative w-full overflow-hidden reveal">
+      <!-- Sombras Laterais -->
+      <div class="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-white via-white to-transparent z-10"></div>
+      <div class="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-white via-white to-transparent z-10"></div>
+
+      <!-- Slider em Movimento -->
+      <div class="flex w-[calc(200px*14)] animate-marquee">
+        <!-- Logos (DUPLICADOS PARA LOOP SUAVE) -->
+        <div class="flex space-x-2 md:space-x-8">
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo Casa de Sinhá.png" alt="AISRS" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo Cidade criativa.jpg" alt="Parque Tecnológico" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo pref COREL.png" alt="Sindvel" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo Santa Rita do Sapucaí.png" alt="Vale da Eletrônica" class="h-16 object-contain" />
+          </div>
+
+          <!-- Segunda volta para efeito contínuo -->
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo Casa de Sinhá.png" alt="AISRS" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo Cidade criativa.jpg" alt="Parque Tecnológico" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo pref COREL.png" alt="Sindvel" class="h-16 object-contain" />
+          </div>
+          <div class="w-[150px] md:w-[200px] h-[100px] flex items-center justify-center">
+            <img src="./img/logo Santa Rita do Sapucaí.png" alt="Vale da Eletrônica" class="h-16 object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+</section>
+
+<div class="w-full h-0.5 bg-black opacity-10"></div>
+
+<!-- ANIMAÇÃO DO SLIDER -->
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 4)); }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+</style>
+
+
+  <!-- PRINCIPAIS ATRAÇÕES (Cards semelhantes, com mesmo estilo e ícones) -->
+<section id="principais-atracoes" class="py-8 md:py-12">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-[#0C2E4E] reveal">
+      Principais Atrações
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Atração 1 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition reveal">
+        <div class="text-primary mb-4">
+          <!-- Ícone 1 (Planeta para gerar ideia de conexão) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="#0C2E4E" stroke="currentColor" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Networking</h3>
+        <p class="text-gray-700">
+          Fortaleça conexões e descubra novas parcerias para impulsionar seu negócio.
+        </p>
+      </div>
+
+      <!-- Atração 2 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition reveal">
+        <div class="text-primary mb-4">
+          <!-- Ícone 2 (Microfone para gerar ideia de palestra) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="#0C2E4E" stroke="currentColor" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 0C139 0 96 43 96 96l0 160c0 53 43 96 96 96s96-43 96-96l0-160c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Palestras</h3>
+        <p class="text-gray-700">
+          Esteja por dentro das últimas tendências tecnológicas e de mercado com especialistas.
+        </p>
+      </div>
+
+      <!-- Atração 3 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition reveal">
+        <div class="text-primary mb-4">
+          <!-- Ícone 3 (caixa para gerar ideia de itens) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-13 h-13 mx-auto" fill="#0C2E4E" stroke="currentColor" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M58.9 42.1c3-6.1 9.6-9.6 16.3-8.7L320 64 564.8 33.4c6.7-.8 13.3 2.7 16.3 8.7l41.7 83.4c9 17.9-.6 39.6-19.8 45.1L439.6 217.3c-13.9 4-28.8-1.9-36.2-14.3L320 64 236.6 203c-7.4 12.4-22.3 18.3-36.2 14.3L37.1 170.6c-19.3-5.5-28.8-27.2-19.8-45.1L58.9 42.1zM321.1 128l54.9 91.4c14.9 24.8 44.6 36.6 72.5 28.6L576 211.6l0 167c0 22-15 41.2-36.4 46.6l-204.1 51c-10.2 2.6-20.9 2.6-31 0l-204.1-51C79 419.7 64 400.5 64 378.5l0-167L191.6 248c27.8 8 57.6-3.8 72.5-28.6L318.9 128l2.2 0z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Exposição de Produtos</h3>
+        <p class="text-gray-700">
+          Conheça inovações e lançamentos que estão moldando o futuro da indústria.
+        </p>
+      </div>
+
+      <!-- Atração 4 -->
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition reveal">
+        <div class="text-primary mb-4">
+          <!-- Ícone 3 (Chip para gerar ideia de tecnologia) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto" fill="#0C2E4E" stroke="currentColor" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c-35.3 0-64 28.7-64 64l-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0c0 35.3 28.7 64 64 64l0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40c35.3 0 64-28.7 64-64l40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0c0-35.3-28.7-64-64-64l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40zM160 128l192 0c17.7 0 32 14.3 32 32l0 192c0 17.7-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32l0-192c0-17.7 14.3-32 32-32zm192 32l-192 0 0 192 192 0 0-192z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Tecnologia Inovadora</h3>
+        <p class="text-gray-700">
+          Explore soluções que estão moldando o futuro da indústria 4.0.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- DEPOIMENTOS OU NÚMEROS DA EDIÇÃO ANTERIOR -->
+  <section class="py-8 md:py-12">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#0C2E4E] reveal">
+        Destaques da Última Edição
+      </h2>
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+        <!-- Exemplo de contadores/números -->
+        <div class="reveal">
+          <p class="text-3xl md:text-4xl font-bold text-[#009CA7]">+72</p>
+          <p class="text-sm md:text-base">Expositores</p>
+        </div>
+        <div class="reveal">
+          <p class="text-3xl md:text-4xl font-bold text-[#009CA7]">6.000</p>
+          <p class="text-sm md:text-base">Visitantes</p>
+        </div>
+        <div class="reveal">
+          <p class="text-3xl md:text-4xl font-bold text-[#009CA7]">+10</p>
+          <p class="text-sm md:text-base">Palestrantes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FIM DEPOIMENTOS OU NÚMEROS -->
+
+  <!-- SEÇÃO CARROSSEL DE FOTOS -->
+<section class="py-8 md:py-8">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-[#0C2E4E] reveal">
+      Momentos da Fivel
+    </h2>
+
+    <!-- Carrossel -->
+    <div id="carousel-fivel" class="relative w-full mx-auto reveal" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-64 md:h-120 overflow-hidden rounded-lg shadow-lg">
+        <!-- Slides -->
+        <div class="carousel-item absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-x-full" data-carousel-item>
+          <img src="./img/Sabores do Vale - Foto no Evento 1.jpg" class="block w-full h-full object-cover" alt="Evento Fivel 1">
+        </div>
+        <div class="carousel-item absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-x-full" data-carousel-item>
+          <img src="./img/Cooper Rita Estande - Foto no Evento 2.jpg" class="block w-full h-full object-cover" alt="Evento Fivel 2">
+        </div>
+        <div class="carousel-item absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-x-full" data-carousel-item>
+          <img src="./img/Sense Estande - Foto no Evento 3.jpg" class="block w-full h-full object-cover" alt="Evento Fivel 3">
+        </div>
+        <div class="carousel-item absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-x-full" data-carousel-item>
+          <img src="./img/Palestra - Foto do Evento 4.jpg" class="block w-full h-full object-cover" alt="Evento Fivel 4">
+        </div>
+        <div class="carousel-item absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-x-full" data-carousel-item>
+          <img src="./img/Rua movimentada - Foto no Evento 5.jpg" class="block w-full h-full object-cover" alt="Evento Fivel 5">
+        </div>
+      </div>
+
+      <!-- Indicadores (bolinhas) -->
+      <div class="absolute z-30 flex -translate-x-1/2 -bottom-5 left-1/2 space-x-3">
+        <button type="button" class="indicator w-2 h-2 rounded-full bg-black" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="indicator w-2 h-2 rounded-full bg-black/50" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="indicator w-2 h-2 rounded-full bg-black/50" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="indicator w-2 h-2 rounded-full bg-black/50" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="indicator w-2 h-2 rounded-full bg-black/50" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+
+      <!-- Botões de navegação -->
+      <button type="button" class="absolute top-1/2 -translate-y-1/2 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/60 hover:bg-black/80">
+          <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Anterior</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-1/2 -translate-y-1/2 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/60 hover:bg-black/80">
+          <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Próximo</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+<!--FIM DA SEÇÃO CARROSSEL DE FOTOS-->
+
+
+  <!-- CHAMADA PARA EXPOSITORES E VISITANTES -->
+  <section class="py-8 md:py-12 bg-[#0C2E4E] text-white reveal">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Seja Expositor ou Visitante
+      </h2>
+      <p class="text-sm md:text-base max-w-3xl mx-auto mb-6">
+        Garanta sua participação como expositor para apresentar suas inovações 
+        ou registre-se como visitante para aproveitar todas as oportunidades de 
+        networking e conhecimento.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
+        <a 
+          href="#"
+          class="bg-[#00CC66] hover:bg-[#009CA7] text-white font-bold py-2 px-6 rounded text-sm md:text-base transition-colors reveal bloqueado"
+        >
+          Inscreva-se como Expositor
+        </a>
+        <a 
+          href="#"
+          class="bg-transparent border border-white hover:bg-white hover:text-[#0C2E4E] font-bold py-2 px-6 rounded text-sm md:text-base bloqueado transition-colors reveal"
+        >
+          Inscreva-se como Visitante
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- FIM CHAMADA PARA EXPOSITORES/VISITANTES -->
+
+  <!-- MODAL DE SITE EM DESENVOLVIMENTO -->
+<div id="dev-modal" class="fixed inset-0 bg-black/60 flex items-center justify-center hidden z-50">
+  <div class="bg-white rounded-2xl p-6 max-w-md w-5/6 text-center shadow-lg flex flex-col justify-center items-center">
+    <i class="fill-yellow-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" heigth="50"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+    </i>
+    <h2 class="text-2xl font-bold text-[#0C2E4E] mt-4">Site em Desenvolvimento</h2>
+    <p class="text-gray-700 mt-4">Esta funcionalidade ainda não está disponível. Estamos trabalhando duro para entregar a melhor experiência para você. Fique ligado para novidades! 😉</p>
+    <button id="close-modal" class="mt-6 bg-[#009CA7] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#0C2E4E] transition">
+      OK, Entendi!
+    </button>
+  </div>
+</div>
+
+  <div id="footer"></div>
+
+  <script src="./js/main.js"></script>
+  
+  <!-- SCRIPT DE CONTAGEM REGRESSIVA -->
+<script>
+  function atualizarContagemRegressiva() {
+    const dataEvento = new Date("2025-10-22T00:00:00").getTime();
+    const agora = new Date().getTime();
+    const distancia = dataEvento - agora;
+
+    if (distancia < 0) {
+      document.getElementById("days").innerHTML = "00";
+      document.getElementById("hours").innerHTML = "00";
+      document.getElementById("minutes").innerHTML = "00";
+      document.getElementById("seconds").innerHTML = "00";
+      return;
+    }
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = dias < 10 ? "0" + dias : dias;
+    document.getElementById("hours").innerHTML = horas < 10 ? "0" + horas : horas;
+    document.getElementById("minutes").innerHTML = minutos < 10 ? "0" + minutos : minutos;
+    document.getElementById("seconds").innerHTML = segundos < 10 ? "0" + segundos : segundos;
+  }
+
+  setInterval(atualizarContagemRegressiva, 1000);
+  atualizarContagemRegressiva();
+</script>
+
+<!-- CARROSSEL COM TRANSIÇÃO SUAVE -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector("#carousel-fivel");
+    const items = carousel.querySelectorAll(".carousel-item");
+    const indicators = carousel.querySelectorAll(".indicator");
+    const prevButton = carousel.querySelector("[data-carousel-prev]");
+    const nextButton = carousel.querySelector("[data-carousel-next]");
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    function updateCarousel(newIndex) {
+      items.forEach((item, i) => {
+        if (i === newIndex) {
+          item.classList.remove("opacity-0", "translate-x-full");
+          item.classList.add("opacity-100", "translate-x-0");
+        } else {
+          item.classList.remove("opacity-100", "translate-x-0");
+          item.classList.add("opacity-0", "translate-x-full");
+        }
+      });
+
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle("bg-black", i === newIndex);
+        indicator.classList.toggle("bg-black/50", i !== newIndex);
+      });
+
+      currentIndex = newIndex;
+    }
+
+    function nextSlide() {
+      let newIndex = (currentIndex + 1) % items.length;
+      updateCarousel(newIndex);
+    }
+
+    function prevSlide() {
+      let newIndex = (currentIndex - 1 + items.length) % items.length;
+      updateCarousel(newIndex);
+    }
+
+    function autoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener("click", () => {
+        stopAutoSlide();
+        updateCarousel(index);
+        autoSlide();
+      });
+    });
+
+    nextButton.addEventListener("click", () => {
+      stopAutoSlide();
+      nextSlide();
+      autoSlide();
+    });
+
+    prevButton.addEventListener("click", () => {
+      stopAutoSlide();
+      prevSlide();
+      autoSlide();
+    });
+
+    updateCarousel(currentIndex);
+    autoSlide();
+  });
+</script>
+
+<!--SCRIPT DE SCROLL VIEW(SLA COMO SE CHAMA ESSE EFEITO KKKK)-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 100; // Quanto mais baixo, mais cedo o efeito ativa
+
+        if (elementTop < windowHeight - elementVisible) {
+          element.classList.add("active");
+        } else {
+          element.classList.remove("active"); // Se quiser que desapareça ao scrollar pra cima, mantenha isso
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Para ativar imediatamente os elementos que já estão na tela
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("dev-modal");
+    const closeModal = document.getElementById("close-modal");
+
+    // Adiciona evento apenas aos elementos com a classe "bloqueado"
+    document.querySelectorAll(".bloqueado").forEach(btn => {
+      btn.addEventListener("click", function (event) {
+        event.preventDefault(); // Impede navegação ou ações padrões
+        modal.classList.remove("hidden"); // Exibe o modal
+      });
+    });
+
+    // Fecha o modal ao clicar no botão "OK, Entendi!"
+    closeModal.addEventListener("click", function () {
+      modal.classList.add("hidden");
+    });
+
+    // Fecha o modal ao clicar fora dele
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

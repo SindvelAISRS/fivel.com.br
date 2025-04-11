@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fivel 2025 - Sobre o evento</title>
+  <!-- Fonte Montserrat e Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" type="imagex/png" href="./img/Logo Fivel 2.png">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500&display=swap" 
+    rel="stylesheet"
+  >
+  <!-- Tailwind CSS -->
+  <link href="/src/css/output.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  .neon-title {
+    text-shadow:
+      0 0 10px #00000062,
+      0 0 20px #015f4886,
+      0 0 40px #ffffff00,
+      0 0 80px #00000070;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .neon-title:hover {
+    text-shadow:
+      0 0 20px #ffffff00,
+      0 0 40px #ffffff00,
+      0 0 60px #ffffff00,
+      0 0 100px #ffffff00;
+  }
+
+.h-120 {
+  height: 650px;
+}
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div id="header"></div>
+  <div class="w-full h-20 bg-black flex flex-col justify-center items-center">
+    <p class="text-red-500 font-bold text-2xl">SITE EM DESENVOLVIMENTO</span>
+    <p class="text-white">Os elementos usados são provisórios!</span>
+  </div>
+
+  <!-- HERO SECTION -->
+<section class="relative w-full bg-gradient-to-r from-[#009CA7] to-[#0C2E4E] text-white py-16 md:h-120 text-center overflow-hidden flex ">
+  <!-- Banner de Fundo -->
+  <div class="absolute inset-0">
+    <img src="/src/img/backgroundSobre.png" alt="Banner Fivel 2025" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#009CA7]/70 to-[#0C2E4E]/80 md:to-[#0C2E4E]/0"></div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="relative max-w-6xl text-start px-4 ml-4 md:ml-44 flex flex-col justify-evenly">
+    <h1 class="text-3xl md:text-8xl font-bold reveal neon-title">Sobre a Fivel 2025</h1>
+    <p class="text-lg md:text-xl mt-4 reveal max-w-4xl">Organizada pelo Sindicato das Indústrias de
+      Aparelhos Elétricos, Eletrônicos e Similares do Vale
+      da Eletrônica (SINDVEL), a Fivel está entre as mais
+      importantes rodadas de negócios da indústria de
+      base tecnológica no Brasil.</p>
+    <p class="text-lg md:text-xl mt-4 reveal max-w-4xl">Alem disso, a feira reúne os principais clientes do setor
+      eletroeletrônico, oferecendo uma oportunidade única de
+      fechar bons negócios e aumentar as vendas dos seus
+      produtos!</p>
+  </div>
+</section>
+
+
+  <!-- LINHA DO TEMPO INTERATIVA -->
+<section class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8 text-[#0C2E4E] reveal">
+      Nossas 3 últimas edições
+    </h2>
+    <div class="relative flex flex-col items-center">
+      <div class="timeline w-full max-w-4xl">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal flex items-center w-full">
+          <div class="w-1 bg-[#009CA7] h-full absolute left-1/2 transform -translate-x-1/2"></div>
+          <div class="w-1/2 flex justify-end pr-6 ">
+            <div class="bg-white p-2 rounded-lg shadow-lg w-72">
+              <h3 class="font-bold text-lg text-[#0C2E4E]">2019</h3>
+              <p class="text-gray-600">
+                Início da nova era da Fivel, com foco em startups e tecnologias emergentes. Evento reposicionou a feira como referência em inovação industrial.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-dot bg-[#009CA7] border-4 border-white w-6 h-6 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item reveal flex items-center w-full">
+          <div class="w-1 bg-[#009CA7] h-full absolute left-1/2 transform -translate-x-1/2"></div>
+          <div class="w-1/2"></div>
+          <div class="w-1/2 flex justify-start pl-6">
+            <div class="bg-white p-2 rounded-lg shadow-lg w-72">
+              <h3 class="font-bold text-lg text-[#0C2E4E]">2021</h3>
+              <p class="text-gray-600">
+                Edição marcada pela retomada pós-pandemia, com destaque para automação, sustentabilidade e conexões estratégicas entre empresas.
+              </p>                   
+            </div>
+          </div>
+          <div class="timeline-dot bg-[#009CA7] border-4 border-white w-6 h-6 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item reveal flex items-center w-full">
+          <div class="w-1 bg-[#009CA7] h-full absolute left-1/2 transform -translate-x-1/2"></div>
+          <div class="w-1/2 flex justify-end pr-6">
+            <div class="bg-white p-2 rounded-lg shadow-lg w-72">
+              <h3 class="font-bold text-lg text-[#0C2E4E]">2023</h3>
+              <p class="text-gray-600">
+                Maior edição da história, com recorde de público e negócios. A Fivel se consolidou como a principal feira tecnológica do Vale da Eletrônica.
+              </p>                         
+            </div>
+          </div>
+          <div class="timeline-dot bg-[#009CA7] border-4 border-white w-6 h-6 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- PROPÓSITO E IMPACTO -->
+<section class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8 text-[#0C2E4E] reveal">Por que Participar?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="border-2 border-cyan-500 p-6 rounded-lg shadow-lg reveal">
+        <h3 class="font-bold text-lg mb-2">O que Esperar?</h3>
+        <p>Expositores de tecnologia, palestras com especialistas e oportunidades únicas de networking.</p>
+      </div>
+      <div class="border-2 border-cyan-500 p-6 rounded-lg shadow-lg reveal">
+        <h3 class="font-bold text-lg mb-2">Impacto no Mercado</h3>
+        <p>A feira conecta empresas e investidores, gerando negócios milionários e inovação tecnológica.</p>
+      </div>
+      <div class="border-2 border-cyan-500 p-6 rounded-lg shadow-lg reveal">
+        <h3 class="font-bold text-lg mb-2">Conexões Estratégicas</h3>
+        <p>Faça parcerias valiosas e expanda sua rede de contatos com líderes de vários setores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- LOCALIZAÇÃO E MAPA INTERATIVO -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#0C2E4E] reveal">Localização</h2>
+      <p class="text-lg mb-6">A Fivel acontece em Santa Rita do Sapucaí, um polo de inovação tecnológica.</p>
+      <div class="w-full h-80 mb-6">
+        <iframe 
+          class="w-full h-full rounded border-0"
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d59080.548176021126!2d-45.74462203665982!3d-22.257743070467296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94cba2436a6a52ad%3A0x4b1d9e698970b789!2sETE%20FMC%2C%20Av.%20Sinh%C3%A1%20Moreira%2C%20350%20-%20Centro%2C%20Santa%20Rita%20do%20Sapuca%C3%AD%20-%20MG%2C%2037540-000!3m2!1d-22.2580998!2d-45.7033694!5e0!3m2!1spt-BR!2sbr!4v1743787333864!5m2!1spt-BR!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="mt-2 text-center">
+          <a 
+            href="https://www.google.com/maps/dir//ETE+FMC,+Av.+Sinh%C3%A1+Moreira,+350+-+Centro,+Santa+Rita+do+Sapuca%C3%AD+-+MG,+37540-000" 
+            target="_blank"
+            class="text-sm text-[#009CA7] underline hover:text-[#0C2E4E] transition mb-4"
+          >
+            Ver rota completa no Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÍDEO INSTITUCIONAL -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#0C2E4E] reveal">Veja como foi a última Fivel</h2>
+      <div class="relative w-full max-w-4xl mx-auto">
+        <iframe class="w-full h-64 md:h-120 rounded-lg shadow-lg reveal" src="https://www.youtube.com/embed/QectZg2itgg" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <!-- SCRIPT PARA EFEITO DE SCROLL -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const reveals = document.querySelectorAll(".reveal");
+
+      function revealOnScroll() {
+        reveals.forEach((element) => {
+          if (element.getBoundingClientRect().top < window.innerHeight - 100) {
+            element.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll();
+    });
+  </script>
+
+<script src="./js/main.js"></script>
+
+
+</body>
+</html>

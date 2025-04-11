@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <header class="w-full h-16 flex items-center justify-between px-4 md:px-8 bg-white shadow relative z-50">
+        <!-- Logo -->
+        <div class="flex items-center justify-center">
+            <img src="./img/Logo Fivel 2.png" alt="Logo Fivel" class="h-12 object-contain">
+        </div>
+        
+        <!-- Menu Desktop -->
+        <nav class="space-x-4 hidden md:flex">
+            <a href="/src/index.html" class="text-gray-600 hover:text-[#009CA7]">Home</a>
+            <a href="/src/sobre.html" class="text-gray-600 hover:text-[#009CA7]">Sobre o Evento</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through">Programação</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through">Expositores</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through">Patrocinadores</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through">Visitantes</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through">Imprensa</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through">FAQ</a>
+            <a href="/src/contato.html" class="text-gray-600 hover:text-[#009CA7]">Contato</a>
+        </nav>
+        
+        <!-- Botão de Inscrição -->
+        <div class="hidden md:block">
+            <a href="/src/construcao.html" class="bg-[#e9cdca] text-red-400 line-through px-4 py-2 rounded text-sm md:text-base font-bold hover:bg-[#009CA7] transition-colors hidden">
+                Inscrição/Cadastro
+            </a>
+        </div>
+        
+        <!-- Botão do Menu Mobile -->
+        <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+        </button>
+        
+        <!-- Modal do Menu Mobile -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white/30 backdrop-blur-lg flex flex-col items-center justify-center space-y-6 transform translate-y-full transition-transform duration-300 ease-in-out md:hidden opacity-0 invisible">
+            <button id="close-btn" class="absolute top-5 right-5 text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <a href="/src/index.html" class="text-gray-800 text-lg font-semibold hover:text-[#009CA7]">Home</a>
+            <a href="/src/sobre.html" class="text-gray-800 text-lg font-semibold hover:text-[#009CA7]">Sobre o Evento</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through text-lg font-semibold">Programação</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through text-lg font-semibold">Expositores</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through text-lg font-semibold">Patrocinadores</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through text-lg font-semibold">Visitantes</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through text-lg font-semibold">Imprensa</a>
+            <a href="/src/construcao.html" class="text-red-300 line-through text-lg font-semibold">FAQ</a>
+            <a href="/src/contato.html" class="text-gray-800 text-lg font-semibold hover:text-[#009CA7]">Contato</a>
+            <a href="/src/construcao.html" class="bg-[#e9cdca] text-red-400 line-through px-6 py-3 rounded text-lg font-bold hover:bg-[#009CA7] transition-colors hidden">Inscrição/Cadastro</a>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "express": "^5.1.0",
+    "tailwindcss": "^4.0.9"
+  }
+}
